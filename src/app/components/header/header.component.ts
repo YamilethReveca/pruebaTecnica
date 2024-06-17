@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+
+  menuActivo: string = '';   
+
   constructor() { }
 
   ngOnInit(): void {
+    
+  }
+
+  activarRaya(seccion: string) {
+    this.menuActivo = seccion;
   }
 
 }

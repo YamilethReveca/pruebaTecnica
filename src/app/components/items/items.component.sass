@@ -3,7 +3,7 @@
 $color: rgba(255, 147, 244, 1)
   
 .contenedorItems
-  display: inline
+  position: relative
   width: 100%  
   justify-content: center
 
@@ -13,27 +13,29 @@ ul
   text-align: center
   list-style-type: none 
   padding: 0 
-  justify-content: space-evenly
+  justify-content: center
+ 
 
 
 #circulo1   
-  float: right 
+  position: absolute 
+  right: 0
+  top: 474px
+  z-index: 1
   width: 490px
   height: 490px
   shape-outside: circle(50% at 70%) 
   clip-path: circle(50% at 100%) 
   background: $color
-  margin-top: -526px
- 
-    
+      
 
 #circulo2
   float: left
-  width: 100px
-  height: 100px  
+  width: 152px
+  height: 152px  
   clip-path: circle(50% at 0% 100%)
   background: $color
-  margin-top: -66px
+  margin-top: -25px
   margin-right: -151px
   
   

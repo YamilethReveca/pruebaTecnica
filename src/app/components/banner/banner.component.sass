@@ -1,13 +1,6 @@
-$color: #FFFFFF
-$fuente: Open Sans
+@import '../../../styles'
+
 $size: 16px
-$fondo: rgba(255, 147, 244, 1)
-
-
-
-body
-  margin: 0
-  padding: 0
 
 
 main 
@@ -46,7 +39,7 @@ main
   z-index: 2 
   color: $color
   font-size: $size
-  font-family: $fuente
+  @mixin open-sans($weight: 400)
 
 
 h3, h1, #button 
@@ -57,13 +50,14 @@ h3, h1, #button
 h3 
   font-size: 16px
   display: block 
-  font-family: $fuente
+  @mixin open-sans($weight: 300) 
 
 h1
   display: block   
-  font-size:$size
-  font-family: $fuente
-  font-size: 75px
+  font-size:75px
+
+  @mixin open-sans($weight: 800) 
+  
 
 
 #button
@@ -71,10 +65,16 @@ h1
   height: 50px
   display: inline-block
   margin-top: 10px  
-  background: $fondo
+  background: $primary-color
   padding: 10px 20px
   border: 1px solid #333333
-  border-radius: 20px
-  font-family: $fuente
+  border-radius: 30px
+  @mixin open-sans($weight: 700) 
   font-size: $size
   color: $color
+  cursor: pointer
+
+
+#button.clicked
+  background:$color-hover
+  

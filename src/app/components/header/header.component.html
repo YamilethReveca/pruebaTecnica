@@ -4,8 +4,8 @@
 <header>  
   <img class= "logo" src="../../../assets/img/logo.png"/>
   <ul>    
-    <li class="inicio">Inicio</li>
-    <li class="seccion2">Sección 2</li>
-    <li class="seccion3">Sección 3</li>
+    <li class="inicio" (click)="activarRaya('inicio')" [ngClass]="{'activo': menuActivo === 'inicio'}">Inicio</li>
+    <li class="seccion2" (click)="activarRaya('seccion2')" [ngClass]="{'activo': menuActivo === 'seccion2'}">Sección 2</li>
+    <li class="seccion3" (click)="activarRaya('seccion3')" [ngClass]="{'activo': menuActivo === 'seccion3'}">Sección 3</li>
   </ul>
 </header>
