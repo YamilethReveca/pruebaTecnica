@@ -1,30 +1,36 @@
+// seccion del items con ul del items
+
+$color: rgba(255, 147, 244, 1)
+  
 .contenedorItems
+  display: flex  
+  width: 100%  
+  justify-content: center
+
+ul
   display: flex
   flex-direction: row
-  width: 100%
-
-.items
-  width:300px
-  height:369px
-  top: 687px
-  left: 197px
-  border-radius: 20px
-
-.cohete
-  width: 75.43px
-  height: 74.1px
-  top: 745px
-  left: 327px
-  Rotation:-22.63°
+  text-align: center
+  justify-content: space-around
   
-h2
-  width:291px
-  height:71px
-  top: 837px
-  left: 202px
 
-.parrafo
-  width: 266px
-  height: 120px
-  top: 907px
-  left: 214px
+.circulos
+  width: auto
+  height: auto
+
+#circulo1   
+  float: right 
+  width: 490px
+  height: 490px
+  shape-outside: circle(50% at 70%) 
+  clip-path: circle(50% at 100%) 
+  background: $color
+  margin-top: -159px
+  margin-right: -151px
+    
+ 
+  
+  
+
+  
+

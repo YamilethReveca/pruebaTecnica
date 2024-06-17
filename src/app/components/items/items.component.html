@@ -1,20 +1,17 @@
 <section class="contenedorItems">
-  <div class="items">
-    <img  class="cohete" src="../../../assets/img/cohete.png"/>
-    <h2>Item 1</h2>
-    <p class="parrafo">Aún nuestro sitio está en cosntrucción (somos muy perfeccionistas jeje).
-       Mientras puedes navegar en nuestro sitio antiguo</p>
-  </div>
-  <div class="items">
-    <img  class="cohete" src="../../../assets/img/cohete.png"/>
-    <h2>Item 1</h2>
-    <p class="parrafo">Aún nuestro sitio está en cosntrucción (somos muy perfeccionistas jeje).
-       Mientras puedes navegar en nuestro sitio antiguo</p>
-  </div>
-  <div class="items">
-    <img  class="cohete" src="../../../assets/img/cohete.png"/>
-    <h2>Item 1</h2>
-    <p class="parrafo">Aún nuestro sitio está en cosntrucción (somos muy perfeccionistas jeje).
-       Mientras puedes navegar en nuestro sitio antiguo</p>
-  </div>  
+  <ul>
+    <ng-container *ngFor="let item of items">
+      <app-item [src]="item.imgSrc" [title]="item.title" [description]="item.description"></app-item>
+    </ng-container>
+  </ul>
+
+  <section class="circulos">
+    <div id="circulo1">
+
+    </div>
+    <div id="circulo2">
+
+    </div>
+
+  </section>
 </section>
