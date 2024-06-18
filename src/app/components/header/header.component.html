@@ -3,9 +3,25 @@
 </div>
 <header>  
   <img class= "logo" src="../../../assets/img/logo.png"/>
-  <ul>    
+  <ul class="d-none d-md-flex">    
     <li class="inicio" (click)="activarRaya('inicio')" [ngClass]="{'activo': menuActivo === 'inicio'}">Inicio</li>
     <li class="seccion2" (click)="activarRaya('seccion2')" [ngClass]="{'activo': menuActivo === 'seccion2'}">Sección 2</li>
     <li class="seccion3" (click)="activarRaya('seccion3')" [ngClass]="{'activo': menuActivo === 'seccion3'}">Sección 3</li>
   </ul>
+  <div class="collapse d-block d-md-none" id="navbarToggleExternalContent">
+    <div class="p-4">
+      <ul>    
+        <li class="inicio" (click)="activarRaya('inicio')" [ngClass]="{'activo': menuActivo === 'inicio'}">Inicio</li>
+        <li class="seccion2" (click)="activarRaya('seccion2')" [ngClass]="{'activo': menuActivo === 'seccion2'}">Sección 2</li>
+        <li class="seccion3" (click)="activarRaya('seccion3')" [ngClass]="{'activo': menuActivo === 'seccion3'}">Sección 3</li>
+      </ul>
+    </div>
+  </div>
+  <nav class="navbar navbar-dark d-block d-md-none">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
 </header>
