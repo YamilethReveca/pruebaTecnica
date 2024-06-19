@@ -8,7 +8,6 @@ header
   background-color: $primary-color
   width: 100%
   height: 74px
-  left: -3px
   display: flex
   justify-content: space-between
   align-items: center 
@@ -54,21 +53,32 @@ li.activo
 //movil
  @media screen and ( max-width: 767 )
 
+
+  header    
+    position: relative
+
+  .navbar
+    position: absolute
+    width: 100%
+    height: 100%   
+
+
   #navbarToggleExternalContent
     margin: -13px
+
 
   .container-fluid
     padding: 0
     margin-left: -64px
+    background-color: #FF93F4
 
-    
-  button
+  bottom
     width: 29px
     margin-left: -31px
-      
+    border: none
+        
   .logo    
-    margin-left: 35px
-
+    margin-left: 39px
  
   ul
     display: flex
@@ -78,6 +88,12 @@ li.activo
 
   li
     font-size: 12px
+
+  .nav-item
+    width: 100%
+    margin-left: 40px
+    margin-right: opx
+
 
 
   
