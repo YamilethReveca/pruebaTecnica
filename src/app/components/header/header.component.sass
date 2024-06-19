@@ -36,7 +36,7 @@ li
   position: relative
 
 li:hover
-  color: rgba(212, 255, 0, 1)
+  color: $menu-clicked
 
 li.activo
   border-bottom: solid $menu-clicked 4px
@@ -51,8 +51,7 @@ li.activo
   margin: 0
 
 //movil
- @media screen and ( max-width: 767 )
-
+@media screen and ( max-width: 767px )
 
   header    
     position: relative
@@ -62,37 +61,49 @@ li.activo
     width: 100%
     height: 100%   
 
-
-  #navbarToggleExternalContent
-    margin: -13px
-
-
   .container-fluid
-    padding: 0
-    margin-left: -64px
+    padding-right: 52px
     background-color: #FF93F4
+    z-index: 2
 
-  bottom
+    li
+      @include open-sans(400)
+      font-size:$size
+      color: $color
+      margin-top: 8px
+    
+   
+    li.activo
+      border-bottom: solid $menu-clicked 4px
+
+  button
     width: 29px
-    margin-left: -31px
     border: none
+
+  .navbar-toggler:focus,
+  .navbar-toggler:active,
+  .navbar-toggler-icon:focus
+    outline: none
+    box-shadow: none
         
   .logo    
-    margin-left: 39px
+    margin-left: 20px
  
   ul
     display: flex
-    align-content: center
+    align-items: flex-start
     justify-content: center
     flex-direction: column
 
-  li
-    font-size: 12px
+      
 
   .nav-item
-    width: 100%
-    margin-left: 40px
-    margin-right: opx
+    margin-left: 22px
+    margin-right: 0px
+
+
+  
+
 
 
 
